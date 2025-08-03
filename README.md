@@ -11,7 +11,7 @@ This is a robust and scalable project template demonstrating Clean Architecture 
 
 * Language: Kotlin with Coroutines for writing asynchronous code that is as readable as synchronous code.
 
-* Build Tool: Gradle with Kotlin DSL for a type-safe and flexible build configuration.
+* Build Tool: Maven.
 
 * Testing: JUnit 5 for unit and integration testing.
 
