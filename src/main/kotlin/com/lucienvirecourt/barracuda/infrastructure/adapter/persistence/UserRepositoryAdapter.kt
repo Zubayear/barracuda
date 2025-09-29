@@ -1,7 +1,7 @@
-package com.lucienvirecourt.prime.infrastructure.adapter.persistence
+package com.lucienvirecourt.barracuda.infrastructure.adapter.persistence
 
-import com.lucienvirecourt.prime.application.port.out.UserRepositoryPort
-import com.lucienvirecourt.prime.domain.model.user.User
+import com.lucienvirecourt.barracuda.application.port.out.UserRepositoryPort
+import com.lucienvirecourt.barracuda.domain.model.user.User
 import io.vertx.sqlclient.Pool
 
 class UserRepositoryAdapter(private val client: Pool) : UserRepositoryPort {

@@ -1,4 +1,4 @@
-package com.lucienvirecourt.prime.application.port.out
+package com.lucienvirecourt.barracuda.application.port.out
 
 interface LoggerPort {
   fun info(message: String)

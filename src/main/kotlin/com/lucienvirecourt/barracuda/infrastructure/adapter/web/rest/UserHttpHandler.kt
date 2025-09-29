@@ -1,9 +1,9 @@
-package com.lucienvirecourt.prime.infrastructure.adapter.web.rest
+package com.lucienvirecourt.barracuda.infrastructure.adapter.web.rest
 
-import com.lucienvirecourt.prime.application.usecase.user.CreateUser
-import com.lucienvirecourt.prime.application.usecase.user.CreateUserOutcome
-import com.lucienvirecourt.prime.infrastructure.adapter.web.rest.dto.CreateUserRequest
-import com.lucienvirecourt.prime.infrastructure.adapter.web.rest.dto.CreateUserResponse
+import com.lucienvirecourt.barracuda.application.usecase.user.CreateUser
+import com.lucienvirecourt.barracuda.application.usecase.user.CreateUserOutcome
+import com.lucienvirecourt.barracuda.infrastructure.adapter.web.rest.dto.CreateUserRequest
+import com.lucienvirecourt.barracuda.infrastructure.adapter.web.rest.dto.CreateUserResponse
 import io.vertx.core.json.Json
 import io.vertx.ext.web.Route
 import io.vertx.ext.web.Router
@@ -23,8 +23,7 @@ class UserHttpHandler(private val createUser: CreateUser) {
     val requestBody = context.body()
       .asPojo(CreateUserRequest::class.java)
 
-    val outcome = createUser.execute(requestBody.toDomain())
-    when (outcome) {
+    when (val outcome = createUser.execute(requestBody.toDomain())) {
       is CreateUserOutcome.Success -> {
         val response = CreateUserResponse.fromDomain(outcome.user)
         context.response()

@@ -1,6 +1,6 @@
-package com.lucienvirecourt.prime.infrastructure.adapter.logging
+package com.lucienvirecourt.barracuda.infrastructure.adapter.logging
 
-import com.lucienvirecourt.prime.application.port.out.LoggerPort
+import com.lucienvirecourt.barracuda.application.port.out.LoggerPort
 import org.slf4j.LoggerFactory
 
 class Slf4jLoggerAdapter(private val className: String) : LoggerPort {

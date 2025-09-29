@@ -1,8 +1,8 @@
-package com.lucienvirecourt.prime.application.usecase.user
+package com.lucienvirecourt.barracuda.application.usecase.user
 
-import com.lucienvirecourt.prime.application.port.out.LoggerPort
-import com.lucienvirecourt.prime.application.port.out.UserRepositoryPort
-import com.lucienvirecourt.prime.domain.model.user.User
+import com.lucienvirecourt.barracuda.application.port.out.LoggerPort
+import com.lucienvirecourt.barracuda.application.port.out.UserRepositoryPort
+import com.lucienvirecourt.barracuda.domain.model.user.User
 
 sealed class CreateUserOutcome {
   data class Success(val user: User) : CreateUserOutcome()

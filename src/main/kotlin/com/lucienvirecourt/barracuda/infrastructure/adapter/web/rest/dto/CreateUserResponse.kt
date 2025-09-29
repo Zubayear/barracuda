@@ -1,6 +1,6 @@
-package com.lucienvirecourt.prime.infrastructure.adapter.web.rest.dto
+package com.lucienvirecourt.barracuda.infrastructure.adapter.web.rest.dto
 
-import com.lucienvirecourt.prime.domain.model.user.User
+import com.lucienvirecourt.barracuda.domain.model.user.User
 
 data class CreateUserResponse(val id: Long, val name: String, val email: String) {
   companion object {

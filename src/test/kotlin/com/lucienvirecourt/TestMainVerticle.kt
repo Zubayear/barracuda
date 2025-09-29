@@ -1,6 +1,6 @@
 package com.lucienvirecourt
 
-import com.lucienvirecourt.prime.startup.AppLauncher
+import com.lucienvirecourt.barracuda.startup.AppLauncher
 import io.vertx.core.Vertx
 import io.vertx.junit5.VertxExtension
 import io.vertx.junit5.VertxTestContext

@@ -1,4 +1,4 @@
-package com.lucienvirecourt.prime.infrastructure
+package com.lucienvirecourt.barracuda.infrastructure
 
 import io.vertx.core.Vertx
 import io.vertx.pgclient.PgConnectOptions

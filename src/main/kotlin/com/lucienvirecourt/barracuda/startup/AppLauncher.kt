@@ -1,8 +1,8 @@
-package com.lucienvirecourt.prime.startup
+package com.lucienvirecourt.barracuda.startup
 
 import com.fasterxml.jackson.module.kotlin.kotlinModule
-import com.lucienvirecourt.prime.infrastructure.PgClientProvider
-import com.lucienvirecourt.prime.infrastructure.verticle.WebServerVerticle
+import com.lucienvirecourt.barracuda.infrastructure.PgClientProvider
+import com.lucienvirecourt.barracuda.infrastructure.verticle.WebServerVerticle
 import io.vertx.core.json.jackson.DatabindCodec
 import io.vertx.kotlin.coroutines.CoroutineVerticle
 import io.vertx.kotlin.coroutines.coAwait
